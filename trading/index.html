@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Volume Profile Day Trading v1.0 — Laid Off Dad Ventures</title>
+  <meta name="description" content="A free guide to volume profile day trading: how to draw four lines on a 2-minute chart, the one rule for holding options, and why familiar patterns show up the same way.">
+  <meta name="author" content="Michael Palhidai">
+  <meta name="theme-color" content="#F6F0E6">
+  <link rel="canonical" href="https://laidoffdadventures.com/trading/">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Laid Off Dad Ventures">
+  <meta property="og:title" content="Volume Profile Day Trading v1.0">
+  <meta property="og:description" content="A free guide to volume profile day trading: four lines, one rule, and why familiar patterns show up the same way.">
+  <meta property="og:url" content="https://laidoffdadventures.com/trading/">
+  <meta property="og:image" content="https://laidoffdadventures.com/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@Laid_Off_Dad">
+  <meta name="twitter:title" content="Volume Profile Day Trading v1.0">
+  <meta name="twitter:description" content="A free guide to volume profile day trading: four lines, one rule, and why familiar patterns show up the same way.">
+  <meta name="twitter:image" content="https://laidoffdadventures.com/images/og-image.png">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/" aria-label="Laid Off Dad Ventures — home">
+        <img src="/images/logo.svg" width="36" height="36" alt="">
+        <span class="brand-name">Dadventures</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/#projects">Projects</a>
+        <a href="/trading/" aria-current="page">Trading guide</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="guide-main">
+    <article class="article wrap">
+      <p class="kicker"><span>Free guide</span><span>Version 1.0</span><span>November 11, 2026</span></p>
+      <h1>Volume Profile Day Trading</h1>
+
+      <aside class="disclaimer" role="note">
+        <p><strong>This is a description of a method, not a recommendation to trade any symbol or option.</strong></p>
+      </aside>
+
+      <p class="lede">Volume profile trading reads where shares actually changed hands: price spends most of its time, and most of its volume, inside consolidations, and the thin gaps in the profile between them are areas price tends to cross quickly on its way to the next consolidation.</p>
+      <p>When you buy an option, the market maker who sold it usually hedges by buying the stock as price moves up (for a call) or selling it as price moves down (for a put). In a low-supply gap there are few sellers waiting, so that forced hedge buying can push price further in your direction. It is not a guarantee, but it can give you an edge because the option reprices quickly.</p>
+
+      <nav class="toc" aria-label="On this page">
+        <h2>On this page</h2>
+        <ol>
+          <li><a href="#how-to-draw">How to draw the four lines</a></li>
+          <li><a href="#definitions">Definitions</a></li>
+          <li><a href="#one-strategy">One Strategy to Rule Them All</a></li>
+          <li><a href="#what-the-profile-shows">What the profile is showing</a></li>
+          <li><a href="#why-a-breakout-can-speed-up">Why a breakout can speed up</a></li>
+          <li><a href="#patterns">How common patterns look on a profile</a></li>
+          <li><a href="#option-strikes">Why new consolidations often form near option strike prices</a></li>
+          <li><a href="#watchlist">Watchlist idea</a></li>
+          <li><a href="#examples">Worked examples from recent charts</a></li>
+          <li><a href="#recap">Recap</a></li>
+          <li><a href="#version-history">Version History</a></li>
+        </ol>
+      </nav>
+
+      <h2 id="how-to-draw">How to draw the four lines</h2>
+      <ol class="steps">
+        <li><strong>Chart setup.</strong> Open a 2-minute chart. Add TradingView’s built-in Visible Range Volume Profile and a 20-period SMA.</li>
+        <li><strong>Zoom.</strong> Scroll out to see the multi-day volume profile. Scroll in as the day goes on to focus on today.</li>
+        <li><strong>Blue lines.</strong> Draw a blue horizontal line at the top and at the bottom of the current consolidation.</li>
+        <li><strong>Yellow target lines.</strong> Draw a yellow line where the next consolidation starts above, and another where the next consolidation starts below. If none is in view, zoom out until you see one.</li>
+        <li><strong>Entries (mechanics, not advice).</strong> Call on a breakout above the top blue line. Put on a breakout below the bottom blue line.</li>
+        <li><strong>Position.</strong> Buy a 0DTE call or put, sized at 1–5% of your account.</li>
+        <li><strong>Exits.</strong> Sell at the yellow target, if price goes back into the consolidation, or if a new consolidation starts (often near an options strike price).</li>
+      </ol>
+
+      <figure class="chart">
+        <img src="/images/qqq-lines-example.jpg" width="1400" height="552" alt="QQQ 2-minute chart. Blue lines mark the top and bottom of the current consolidation (the thick volume band). Yellow lines mark the start of the next volume area above and below — the targets. The histogram on the right is TradingView’s visible-range volume profile.">
+        <figcaption><strong>Figure.</strong> QQQ 2-minute chart. Blue lines mark the top and bottom of the current consolidation (the thick volume band, roughly 685–697). Yellow lines mark the start of the next volume area above and below — the targets (near 703 above and 670 below), lined up with the next heavy rows / the far edge of the gap. The histogram on the right is TradingView’s visible-range volume profile.</figcaption>
+      </figure>
+
+      <div class="rule-box">
+        <h3 id="the-only-rule">The only rule</h3>
+        <p>Do not hold options while price is in consolidation. Sell at the yellow target, if price goes back into the blue box, or if a new consolidation starts forming.</p>
+      </div>
+
+      <p class="more-below">Additional information below</p>
+
+      <h2 id="definitions">Definitions</h2>
+      <dl class="defs">
+        <div>
+          <dt>Volume profile</dt>
+          <dd>A histogram on the price axis showing how much volume traded at each price for the bars on screen. TradingView’s Visible Range Volume Profile rebuilds when you zoom or scroll.</dd>
+        </div>
+        <div>
+          <dt>Consolidation</dt>
+          <dd>A price zone where trading was heavy and price chopped sideways. On the profile it is a thick, stacked band of volume. The blue lines mark its top and bottom.</dd>
+        </div>
+        <div>
+          <dt>Value area</dt>
+          <dd>The band of prices that together hold most of the visible volume, often about 70%. The current consolidation is usually the value area of the bars on screen.</dd>
+        </div>
+        <div>
+          <dt>Point of control (POC)</dt>
+          <dd>The single price row with the most volume. It is the longest bar on the profile.</dd>
+        </div>
+        <div>
+          <dt>High-volume node (HVN)</dt>
+          <dd>A thick row or cluster of rows: prices the market has accepted, where price tends to slow down and spend time.</dd>
+        </div>
+        <div>
+          <dt>Low-volume node (LVN) / volume gap</dt>
+          <dd>A thin stretch of rows between consolidations: prices the market mostly skipped. There is little resting supply there, so price tends to move through quickly.</dd>
+        </div>
+        <div>
+          <dt>Target line (yellow)</dt>
+          <dd>A line at the starting edge of the next consolidation above or below, which is the near edge of the next heavy-volume area beyond a gap.</dd>
+        </div>
+        <div>
+          <dt>Breakout</dt>
+          <dd>Price leaving the current consolidation past a blue line and entering the gap. A call is the option that gains if price keeps rising; a put gains if price keeps falling.</dd>
+        </div>
+        <div>
+          <dt>New consolidation</dt>
+          <dd>Price stops traveling and starts stacking volume in a fresh band, often near an options strike price. It is an exit signal and the start of a new blue box.</dd>
+        </div>
+        <div>
+          <dt>Time decay</dt>
+          <dd>An option loses value as time passes when price goes nowhere. Inside a consolidation price is being absorbed, so decay works against the option and the directional edge is gone. That is why the only rule is not to hold options there.</dd>
+        </div>
+        <div>
+          <dt>20 SMA</dt>
+          <dd>The average of the last 20 closing prices. On a 2-minute chart that is roughly the last 40 minutes.</dd>
+        </div>
+      </dl>
+
+      <h2 id="one-strategy">One Strategy to Rule Them All</h2>
+      <p>You don’t need to learn complex strategies and chart patterns like the ones below. The volume profile explains each of them: every one comes down to price breaking out of a consolidation at the edge the volume profile already shows (the blue line) and traveling through the thin gap to the next consolidation (the yellow line).</p>
+      <ul class="pattern-list">
+        <li><strong>Support and resistance.</strong> Support and resistance are the bottom and top edges of the consolidation on the volume profile, the blue lines. When price breaks through one of those levels, that is the break of consolidation, and it tends to run to the next consolidation at the yellow line.</li>
+        <li><strong>Rectangles and trading ranges.</strong> A rectangle is the blue box itself. The breakout is the break of consolidation at the same level as the volume profile’s edge, and the move runs through the thin gap to the next consolidation.</li>
+        <li><strong>Wyckoff accumulation and distribution.</strong> The Wyckoff trading range is the consolidation on the profile. A spring (below) or upthrust (above) is a false break that comes back into the box. The sign of strength into markup, or sign of weakness into markdown, is the real break of consolidation at the volume-profile edge, and it runs to the next consolidation.</li>
+        <li><strong>Head and shoulders.</strong> The neckline sits at the edge of the consolidation on the volume profile, so the neckline break is the break of consolidation at the blue line. The move then runs through the gap toward the next consolidation.</li>
+        <li><strong>Double tops and bottoms.</strong> The two tests happen inside the same consolidation, and the neckline between them is the consolidation edge on the profile. The neckline break is the break of consolidation at that level, and the target is where the next consolidation starts.</li>
+        <li><strong>Triangles, flags, and pennants.</strong> Each of these is a small consolidation. The breakout from the pattern is the break of consolidation at the same level as the volume-profile edge, and it usually goes toward the thinner side of the profile, on to the next consolidation.</li>
+        <li><strong>Measured moves.</strong> The measurement starts at the breakout point, which is the break of consolidation at the volume-profile edge. Instead of adding the box height, the yellow line shows where the next consolidation actually begins.</li>
+        <li><strong>Gap fills.</strong> A price gap leaves a thin, skipped zone on the profile. The fill starts when price breaks out of the consolidation at the profile’s edge on the gap side, and it runs quickly through the gap to the consolidation on the other side.</li>
+        <li><strong>Candle patterns.</strong> A strong full-body candle that closes outside the box is the break of consolidation at the volume-profile edge. Long wicks are failed breaks that close back inside the box, and dojis or inside bars are small consolidations.</li>
+        <li><strong>Option strike pinning.</strong> Heavy open interest at a strike can hold price there, so new consolidations often form near big strikes. The pin ends when price breaks out of that consolidation at the edge the profile shows.</li>
+        <li><strong>Dealer gamma hedging and gamma squeezes.</strong> A gamma squeeze starts with a break of consolidation at the volume-profile edge. When dealers are short gamma, their hedging adds fuel through the gap to the next consolidation; when they are long gamma, it pushes price back into the box.</li>
+        <li><strong>70% value-area transitions (the “quantum” idea).</strong> The value area is the consolidation on the profile. Price jumps to the next value area only after it breaks out of the current one at the profile’s edge, crossing the thin gap instead of drifting.</li>
+        <li><strong>VIX expected move.</strong> VIX divided by 16 is a rough one-day move in percent. When that move reaches past the consolidation edge on the profile, a break of consolidation there and a trip to the next consolidation fit inside a normal day.</li>
+        <li><strong>Elliott Wave theory.</strong> Each impulse wave starts with a break of consolidation at the volume-profile edge and runs through the low-volume gap to the next consolidation. Corrective waves are price building that next consolidation before the next break.</li>
+      </ul>
+      <p>The rest of this document explains why the same volume-profile picture sits underneath familiar chart patterns and other technical ideas.</p>
+
+      <h2 id="what-the-profile-shows">What the profile is showing</h2>
+      <p>A <strong>volume profile</strong> is a histogram on the price axis. Each horizontal row shows how much volume traded at that price over the bars currently visible on the chart. TradingView’s Visible Range Volume Profile rebuilds whenever you zoom or scroll, so the picture always matches what you can see.</p>
+      <p>The blue consolidation lines are the top and bottom of the current value-area shelf. The yellow targets sit at the near edge of the next thick shelf beyond each gap.</p>
+
+      <h2 id="why-a-breakout-can-speed-up">Why a breakout can speed up</h2>
+      <p>A breakout from a shelf into a gap often moves faster than the chop inside the shelf. Several mechanics stack up; none of them guarantee follow-through.</p>
+      <ol>
+        <li><strong>Orders pile up just outside the shelf.</strong> Stop-losses and breakout entries sit just beyond the blue edges. When price crosses, those orders become market orders at roughly the same time.</li>
+        <li><strong>Thin air / less inventory in the gap.</strong> Inside the shelf, many shares already changed hands, so buyers and sellers are waiting there. In the thin stretch above or below, fewer resting orders absorb the flow, so price has to travel farther to find the other side. That is the low-volume node on the profile.</li>
+        <li><strong>Volatility cycles.</strong> Quiet ranges are often followed by more active stretches. A tight shelf is compressed volatility; when it ends, the first leg is often larger than the moves inside the box.</li>
+        <li><strong>Trapped traders.</strong> Anyone who bet on the range holding, and is now wrong, has to exit. Their exits add to the move in the breakout direction.</li>
+        <li><strong>Dealer hedging (optional, short).</strong> When traders buy a lot of short-dated calls (or puts), market makers who sold those options hedge by buying (or shorting) the underlying. As price keeps moving, that hedge has to be adjusted — dealers who are short gamma buy into rallies and sell into drops, which can add fuel. The opposite (dealers long gamma) can pin price near large option strikes. For one person in a liquid name like SPY or QQQ, a handful of contracts rarely moves the market; these effects matter when the market as a whole is crowded in the same strikes.</li>
+      </ol>
+      <p>The same mechanics also explain failed breakouts: if the stop and breakout orders get filled and no new participation arrives, price falls back into the shelf.</p>
+
+      <h2 id="patterns">How common patterns look on a profile</h2>
+      <p>Most chart patterns are pictures of the same volume-profile idea: a heavy shelf, a thin gap, and a leave of that shelf.</p>
+      <ul class="pattern-list">
+        <li><strong>Rectangle.</strong> Flat top and bottom with heavy volume inside. That is the blue box itself.</li>
+        <li><strong>Head and shoulders (or double top / bottom).</strong> Repeated tests of the same high-volume area that fail. The neckline is the edge of that shelf. Breaking the neckline is the same event as leaving the consolidation: stops fire, price enters the thin zone, and trapped traders exit.</li>
+        <li><strong>Triangles and flags.</strong> A narrowing or short pause after a sharp move. The break still goes into whichever side of the profile is thinner.</li>
+        <li><strong>Measured-move targets.</strong> Adding the box height to the breakout edge is a rough guess at how far price travels. The yellow line answers the same question more directly: it marks where the next pile of volume begins.</li>
+      </ul>
+      <p>The diagrams below are simplified teaching drawings (not live market data). Gold rows are heavy volume, blue are medium, gray are thin.</p>
+
+      <figure class="chart">
+        <img src="/images/hs-top-profile.png" width="1210" height="605" alt="Simplified teaching drawing of a head and shoulders top with a volume profile. Gold rows show heavy volume, blue medium, and gray thin.">
+        <figcaption><strong>Figure.</strong> Head and shoulders top. The neckline is the bottom edge of the heavy shelf. A break puts price into the thin zone below, toward the next heavy area.</figcaption>
+      </figure>
+
+      <figure class="chart">
+        <img src="/images/double-top-profile.png" width="1210" height="605" alt="Simplified teaching drawing of a double top with a volume profile. Gold rows show heavy volume, blue medium, and gray thin.">
+        <figcaption><strong>Figure.</strong> Double top. Two failed rallies at the same heavy area; the low between them is the neckline. Same shelf-and-gap logic as the blue and yellow lines.</figcaption>
+      </figure>
+
+      <figure class="chart">
+        <img src="/images/rectangle-breakdown-profile.png" width="1210" height="605" alt="Simplified teaching drawing of a rectangle breakdown with a volume profile. Gold rows show heavy volume, blue medium, and gray thin.">
+        <figcaption><strong>Figure.</strong> Rectangle breakdown. Flat heavy shelf, thin volume below, next heavy area further down — the plainest form of the four-line method.</figcaption>
+      </figure>
+
+      <h2 id="option-strikes">Why new consolidations often form near option strike prices</h2>
+      <p>Large open interest at a strike attracts hedging flow. When dealers are long gamma around that strike, their hedging tends to sell rallies and buy dips, which can keep price pinned nearby. When the pinning ends, or when a break finally leaves that shelf, a new thick volume band often starts building at the next crowded strike. That is why a yellow target is not only an exit level — it is also a place where a new blue box may form. If price fails to hold there and the next gap opens below (or above), the method simply redraws: the failed shelf becomes the old consolidation, and the next heavy edge becomes the new yellow line.</p>
+
+      <h2 id="watchlist">Watchlist idea</h2>
+      <p>The method needs liquid names with clear shelves and gaps. A practical daily filter:</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Filter</th>
+              <th scope="col">Starting point</th>
+              <th scope="col">Why</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Market capitalization</td>
+              <td>Roughly <strong>$200B+</strong></td>
+              <td>Large, liquid names; tight spreads in stock and options</td>
+            </tr>
+            <tr>
+              <td>Relative volume</td>
+              <td>Elevated (for example <strong>&gt; 1.5×</strong> normal)</td>
+              <td>Unusual participation today</td>
+            </tr>
+            <tr>
+              <td>Day’s percentage change</td>
+              <td>Large up or down</td>
+              <td>Something is actually moving</td>
+            </tr>
+            <tr>
+              <td>Profile gaps</td>
+              <td>Visible thin rows between shelves on today’s (or multi-day) visible-range profile</td>
+              <td>Room for a fast move once price leaves a shelf</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Also check option liquidity on the strikes you would actually use (tight bid-ask, meaningful open interest). Intraday profiles change through the day, so a gap at 10 a.m. can fill by noon. Mega-caps move less in percentage terms than small caps; a few percent in a trillion-dollar name is already a large session.</p>
+
+      <h2 id="examples">Worked examples from recent charts</h2>
+      <p>These are screenshots from QQQ and SPY charts posted in early November 2026. Each one teaches a piece of the four-line method. Prices named below are what is visible on the chart, not forecasts.</p>
+
+      <h3 id="example-qqq-nov6">Waiting inside the blue box (QQQ, Nov 6, 2026)</h3>
+      <figure class="chart">
+        <img src="/images/qqq-wait-break-nov6.jpg" width="1200" height="544" alt="QQQ 2-minute chart from November 6, 2026, showing price still waiting inside a blue consolidation box, with yellow targets above and below.">
+        <figcaption><strong>Figure.</strong> Posted Nov 6, 2026: “Be patient for $QQQ to break consolidation.” Tighter 2-minute view. Blue consolidation runs around the mid-650s to about 662; yellow targets sit near 669 above and about 642 / 636 below (additional labels on the chart mark a Leo-fold and the 2025 top). Price is still inside the blue box — the only rule says wait.</figcaption>
+      </figure>
+
+      <h3 id="example-spy-nov6">A cleaner shelf-and-gap structure (SPY, Nov 6, 2026)</h3>
+      <figure class="chart">
+        <img src="/images/spy-vp-nov6.jpg" width="1200" height="544" alt="SPY 2-minute chart from November 6, 2026, after a sharp drop, with a tight blue consolidation near the lows and yellow targets stacked above and one below.">
+        <figcaption><strong>Figure.</strong> Posted Nov 6, 2026: “Volume profile on $SPY looks better than $QQQ.” SPY 2-minute after a sharp drop. Blue consolidation near the lows (about 733–736); yellow targets stacked above (about 741 and 746) and one below (about 730). “Looks better” here means a clearer gap/shelf structure on the profile, not a prediction.</figcaption>
+      </figure>
+
+      <h3 id="example-target-nov5">Sell when it hits the yellow target (QQQ, Nov 5, 2026)</h3>
+      <figure class="chart">
+        <img src="/images/target-hit-nov5.jpg" width="1200" height="544" alt="QQQ chart from November 5, 2026, showing price leaving the bottom of the blue box, traveling through a thin gap, and reaching the lower yellow target.">
+        <figcaption><strong>Figure.</strong> Posted Nov 5, 2026: “Target hit!” Same framing as the page-1 teaching chart: blue box roughly 683–697, upper yellow near 703, lower yellow near 670. Price has left the bottom blue line, traveled the thin gap, and reached the lower yellow target. That is the exit mechanics in the numbered steps above.</figcaption>
+      </figure>
+
+      <h3 id="example-double-bottom-nov5">Target as a possible new consolidation — and what if it fails (QQQ, Nov 5, 2026)</h3>
+      <figure class="chart">
+        <img src="/images/double-bottom-nov5.jpg" width="1200" height="544" alt="QQQ chart from November 5, 2026, showing price wick through the 670 yellow target toward the next shelf.">
+        <figcaption><strong>Figure.</strong> Posted Nov 5, 2026 shortly after: “$QQQ hit that double bottom. Now it needs to hold or the next support is around 636.” Price wicked through the 670 yellow target toward the next shelf (Leo-fold near 661). A yellow line is both an exit and a candidate for a new blue box. If it does not hold, zoom the profile, find the next heavy edge, and redraw.</figcaption>
+      </figure>
+
+      <p><em>(The Nov 5 chart captioned “If $QQQ doesn’t catch a bid, there’s not much support below” uses the same blue/yellow framing as the page-1 teaching figure, so it is not repeated here.)</em></p>
+
+      <h2 id="recap">Recap</h2>
+      <ul>
+        <li><strong>Four lines.</strong> Two blue at the top and bottom of the current heavy-volume shelf. Two yellow at the starting edges of the next heavy shelves above and below.</li>
+        <li><strong>Two tools.</strong> TradingView Visible Range Volume Profile and a 20 SMA on a 2-minute chart. Zoom out for multi-day shelves; zoom in as the day develops.</li>
+        <li><strong>One rule.</strong> Do not hold options while price is inside consolidation. Sell at the yellow target, on a return into the blue box, or when a new shelf starts forming.</li>
+      </ul>
+
+      <aside class="disclaimer disclaimer-bottom" role="note">
+        <p><strong>This is a description of a method, not a recommendation to trade any symbol or option.</strong> Options can lose 100% of the premium paid.</p>
+      </aside>
+
+      <h2 id="version-history">Version History</h2>
+      <ul class="version-list">
+        <li><strong>1.0 —</strong> Initial draft release, November 11, 2026.</li>
+        <li><strong>2.0 —</strong> Free indicators with webhooks. Release date TBD.</li>
+        <li><strong>3.0 —</strong> Automated trading and setup. Release date TBD.</li>
+      </ul>
+
+      <section class="support-block" aria-labelledby="support-title">
+        <h2 class="support-label" id="support-title">Support my family</h2>
+        <p class="support-note">If this helped you land a big win, and to help keep it free unlike paid subscriptions and Discord groups, support me and my family here.</p>
+        <div class="support-actions">
+          <a class="btn btn-x" href="https://x.com/Laid_Off_Dad" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.74l7.726-8.835L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            X Money
+          </a>
+          <a class="btn btn-venmo" href="https://venmo.com/u/LaidOffDad" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.5 3.4c.8 1.3 1.2 2.7 1.2 4.3 0 5.4-4.6 12.4-8.3 16.3H6.15L3.5 3.96l6.22-.66 1.42 14.3c2.05-3.33 4.57-8.56 4.57-12.14 0-1.24-.22-2.08-.55-2.78L19.5 3.4z"/></svg>
+            Venmo
+          </a>
+          <!-- Stripe card support will be enabled once the payment link is available. -->
+          <a class="btn btn-card" hidden>Card</a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="support-label">Support my family</p>
+        <p class="support-note">Optional, and appreciated. It helps keep the trading guide free.</p>
+        <div class="support-actions">
+          <a class="btn btn-x" href="https://x.com/Laid_Off_Dad" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.74l7.726-8.835L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            X Money
+          </a>
+          <a class="btn btn-venmo" href="https://venmo.com/u/LaidOffDad" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.5 3.4c.8 1.3 1.2 2.7 1.2 4.3 0 5.4-4.6 12.4-8.3 16.3H6.15L3.5 3.96l6.22-.66 1.42 14.3c2.05-3.33 4.57-8.56 4.57-12.14 0-1.24-.22-2.08-.55-2.78L19.5 3.4z"/></svg>
+            Venmo
+          </a>
+          <!-- Stripe card support will be enabled once the payment link is available. -->
+          <a class="btn btn-card" hidden>Card</a>
+        </div>
+      </div>
+      <div class="footer-meta">
+        <p><a href="https://michaelpalhidai.com">Michael Palhidai</a></p>
+        <p>© 2026 Laid Off Dad Ventures LLC</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

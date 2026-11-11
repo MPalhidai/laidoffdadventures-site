@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Laid Off Dad Ventures">
+  <rect width="64" height="64" rx="14" fill="#C45C26"/>
+  <circle cx="32" cy="23" r="11" fill="#FFF8E8"/>
+  <path fill="#FFECDC" d="M0 40c8-8 18-12 28-8 2 1 4 2 6 2 10-8 22-6 30 2v28H0V40z"/>
+  <path fill="#F0D3B0" d="M24 46c10-8 22-8 40 2v16H20c2-6 3-12 4-18z"/>
+</svg>
