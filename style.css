@@ -73,6 +73,8 @@
   --x-ink: #1a1714;
   --venmo: #3b7cb8;
   --venmo-dark: #2c628f;
+  --stripe: #635bff;
+  --stripe-dark: #4b44d6;
   --radius: 16px;
   --radius-sm: 10px;
   --shadow: 0 10px 28px rgba(42, 34, 26, 0.08);
@@ -377,10 +379,10 @@ h1, h2, h3, h4, .brand-name, .tagline {
 }
 .btn-venmo:hover { background: var(--venmo-dark); color: #fff; }
 .btn-card {
-  background: var(--bg-elev);
-  color: var(--ink);
-  border-color: var(--line);
+  background: var(--stripe);
+  color: #fff;
 }
+.btn-card:hover { background: var(--stripe-dark); color: #fff; }
 .footer-meta {
   text-align: right;
   color: var(--muted);
