@@ -79,7 +79,7 @@
         <li><strong>Yellow target lines.</strong> Draw a yellow line where the next consolidation starts above, and another where the next consolidation starts below. If none is in view, zoom out until you see one.</li>
         <li><strong>Entries.</strong> Call on a breakout above the top blue line. Put on a breakout below the bottom blue line. Buy an option with the strike at the breakout line or closer to the target, depending on account size and risk tolerance.</li>
         <li><strong>Position.</strong> Buy a 0DTE call or put, sized at 1–5% of your account.</li>
-        <li><strong>Exits.</strong> Sell at the yellow target, if price goes back into the consolidation, or if a new consolidation starts (often near an options strike price).</li>
+        <li><strong>Exits.</strong> Sell at the yellow target or on the first candle after it with a wick against you, if price goes back into the consolidation, if a candle closes on the wrong side of the 20 EMA, or if a new consolidation starts (often near an options strike price).</li>
       </ol>
 
       <figure class="chart">
@@ -158,6 +158,18 @@
         <div>
           <dt>20 SMA</dt>
           <dd>The average of the last 20 closing prices. On a 2-minute chart that is roughly the last 40 minutes.</dd>
+        </div>
+        <div>
+          <dt>20 EMA</dt>
+          <dd>An average of the last 20 closing prices that gives more weight to the newest ones, so it reacts faster than the 20 SMA. A candle that closes on the wrong side of it means the move is losing steam.</dd>
+        </div>
+        <div>
+          <dt>Candle</dt>
+          <dd>One bar on the chart covering a set stretch of time, such as 2 minutes. The thick body runs from where price opened to where it closed. It's usually green when price closed higher and red when it closed lower.</dd>
+        </div>
+        <div>
+          <dt>Wick</dt>
+          <dd>The thin line above or below a candle's body. It shows how far price reached before it got pushed back. A wick against you, meaning one on top while you hold calls or on the bottom while you hold puts, shows the other side is pushing back.</dd>
         </div>
       </dl>
 
